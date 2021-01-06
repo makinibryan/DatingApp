@@ -25,7 +25,7 @@ namespace API.Controllers
             
         }
 
-        // example api/users/3
+        // example api/users/3 or 2 or 1
         [HttpGet("{id}")]
         public async Task< ActionResult<AppUser>> GetUser(int id)
         {
