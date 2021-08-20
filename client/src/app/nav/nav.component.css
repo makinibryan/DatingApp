@@ -1,0 +1,11 @@
+a.nav-link {
+    font-size: 1.25rem;
+}
+a.dropdown-toggle.text-light {
+    font-size: 1.25rem;
+    
+}
+.dropdown-toggle, .dropdown-item{
+    cursor: pointer;
+}
+
