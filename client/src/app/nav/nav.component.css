@@ -8,4 +8,15 @@ a.dropdown-toggle.text-light {
 .dropdown-toggle, .dropdown-item{
     cursor: pointer;
 }
+button.btn.btn-outline-success.m-2 {
+    padding: 0px;
+    width: 10.45rem;
+    border-color: white;
+    color: white;
+    
+}
 
+button.btn.btn-outline-success.m-2:hover{
+color: black;
+background-color: white;
+}
