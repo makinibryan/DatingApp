@@ -16,6 +16,7 @@ import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
 import { SharedModule } from './modules/shared.module';
 import { TesterrorsComponent } from './errors/testerrors/testerrors.component';
+import { NotFoundComponent } from './errors/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TesterrorsComponent } from './errors/testerrors/testerrors.component';
     MemberDetailComponent,
     ListsComponent,
     MessagesComponent,
-    TesterrorsComponent
+    TesterrorsComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
