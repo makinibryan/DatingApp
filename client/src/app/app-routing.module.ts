@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AuthGuard } from './_guards/auth.guard';
+import { TesterrorsComponent } from './errors/testerrors/testerrors.component';
 
 const routes: Routes = [
   {
@@ -20,8 +21,10 @@ const routes: Routes = [
     {path: 'lists', component: ListsComponent} ,
     {path: 'messages', component: MessagesComponent} 
     ]
-  } ,
-  {path: '**', component: HomeComponent, pathMatch: 'full'}  
+  },
+  {path: 'errors', component: TesterrorsComponent}  ,
+  {path: '**', component: HomeComponent, pathMatch: 'full'} 
+  
 
 ];
 

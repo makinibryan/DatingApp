@@ -1,5 +1,6 @@
 using API.Data;
 using API.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -12,11 +13,15 @@ namespace API.Controllers
             _context = context;
 
         }
+
+        //error 401
+        [Authorize]
         [HttpGet("auth")]
         public ActionResult<string> GetSecret()
         {
             return "secret text";
         }
+        
 
         [HttpGet("not-found")]
         public ActionResult<AppUser> GetNotFound()
@@ -35,6 +40,7 @@ namespace API.Controllers
         {
 
             var thing = _context.Users.Find(-1);
+
             var thingToReturn = thing.ToString();
             return thingToReturn;
         }
