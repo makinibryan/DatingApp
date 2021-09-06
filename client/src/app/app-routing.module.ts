@@ -23,14 +23,14 @@ const routes: Routes = [
     {path: 'members/:username', component: MemberDetailComponent} ,
     {path: 'members/edit', component: MemberEditComponent},
     {path: 'lists', component: ListsComponent} ,
-    {path: 'messages', component: MessagesComponent} 
+    {path: 'messages', component: MessagesComponent}
     ]
   },
   {path: 'errors', component: TesterrorsComponent}  ,
   {path: 'not-found', component: NotFoundComponent},
   {path: 'server-error', component: ServerErrorComponent},
-  {path: '**', component: NotFoundComponent, pathMatch: 'full'} 
-  
+  {path: '**', component: NotFoundComponent, pathMatch: 'full'}
+
 
 ];
 

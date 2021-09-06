@@ -1,3 +1,4 @@
+import { JwtInterceptor } from './_interceptors/jwt.interceptor';
 import { ErrorInterceptor } from './_interceptors/error.interceptor';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
@@ -36,7 +37,7 @@ import { MemberCardComponent } from './members/member-card/member-card.component
     ServerErrorComponent,
     MemberEditComponent,
     MemberCardComponent
-    
+
   ],
   imports: [
     BrowserModule,
@@ -45,13 +46,17 @@ import { MemberCardComponent } from './members/member-card/member-card.component
     NgbModule,
     FormsModule,
     SharedModule
-    
-    
-    
+
+
+
   ],
   providers: [
     {
       provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true
+
+    },
+    {
+      provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true
     }
   ],
   bootstrap: [AppComponent]
