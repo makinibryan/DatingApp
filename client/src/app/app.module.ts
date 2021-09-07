@@ -21,6 +21,7 @@ import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { ServerErrorComponent } from './errors/server-error/server-error.component';
 import { MemberEditComponent } from './members/member-edit/member-edit.component';
 import { MemberCardComponent } from './members/member-card/member-card.component';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { MemberCardComponent } from './members/member-card/member-card.component
     HttpClientModule,
     NgbModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    TabsModule.forRoot()
 
 
 
